@@ -1,0 +1,151 @@
+:root {
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --error-color: #cf6679;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.weather-card {
+    background-color: var(--card-color);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.loading-spinner {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.modal-weather-icon {
+    font-size: 4rem;
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+.weather-detail {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.weather-detail i {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #9a67ea;
+    border-color: #9a67ea;
+}
+
+.btn-location {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #000;
+}
+
+.btn-location:hover {
+    background-color: #00b8a9;
+    border-color: #00b8a9;
+}
+
+.form-control, .form-control:focus {
+    background-color: #2d2d2d;
+    color: var(--text-color);
+    border-color: #444;
+}
+
+.form-text {
+    color: #aaa;
+}
+
+.modal-content {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+.modal-header, .modal-footer {
+    border-color: #444;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.alert-danger {
+    background-color: var(--error-color);
+    color: #000;
+    border-color: var(--error-color);
+}
+
+hr {
+    border-color: #444;
+}
+
+.display-4 {
+    color: var(--primary-color);
+}
+
+.lead {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+/* Animation for weather icon */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.location-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.location-buttons .btn {
+    flex: 1;
+}Enter file contents here
