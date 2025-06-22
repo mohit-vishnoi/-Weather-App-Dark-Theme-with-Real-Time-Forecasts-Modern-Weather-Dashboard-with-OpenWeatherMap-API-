@@ -1,62 +1,52 @@
 # Weather App
 
-A responsive and accessible weather application that provides current weather information for any city or your current location.
+A simple, responsive weather application that displays current weather conditions for any city or your current location.
 
 ## Features
 
-- Search weather by city name (with optional country code)
+- Search weather by city name (e.g., "London" or "London,UK")
 - Get weather for your current location using geolocation
 - Detailed weather information including:
   - Current temperature and "feels like" temperature
-  - Weather conditions (sunny, rainy, cloudy, etc.)
+  - Weather conditions (clear, cloudy, rain, etc.)
   - Humidity, wind speed, and atmospheric pressure
-  - Visibility and cloudiness percentage
+  - Visibility and cloudiness percentages
   - Sunrise and sunset times
-- Responsive design that works on all device sizes
-- Dark mode theme for comfortable viewing
-- Accessible interface with proper ARIA attributes
-- Animated weather icons
+- Dark mode interface with accessible color scheme
+- Responsive design that works on mobile and desktop
+- Loading spinner during API requests
+- Error handling with user-friendly messages
 
 ## Technologies Used
 
 - HTML5
-- CSS3 (with CSS variables for theming)
+- CSS3 (with CSS Variables for theming)
 - JavaScript (ES6)
 - Bootstrap 5 (for responsive layout and components)
 - Font Awesome (for icons)
 - OpenWeatherMap API (for weather data)
 
-## How to Use
+## Setup Instructions
 
-1. Enter a city name in the search field (you can add a country code for more accurate results, e.g., "London,UK")
-2. Click the "Search" button or press Enter
-3. Alternatively, click "My Location" to get weather for your current location
-4. View the weather details in the modal that appears
+1. Clone or download this repository
+2. Open `index.html` in your web browser
+3. To use your own API key:
+   - Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
+   - Replace `YOUR_API_KEY_HERE` in `script.js` with your actual API key
 
-## Installation
+## Usage
 
-No installation required - this is a client-side only application. Simply open the `index.html` file in any modern web browser.
+1. Enter a city name in the search field (e.g., "Paris" or "Tokyo,JP")
+2. Click "Search" or press Enter
+3. Alternatively, click "My Location" to get weather for your current position
+4. View detailed weather information in the modal that appears
 
-## API Key Note
+## Browser Support
 
-This application uses a free-tier OpenWeatherMap API key that's included in the code. For production use, you should:
+The app should work in all modern browsers including:
+- Chrome
+- Firefox
+- Safari
+- Edge
 
-1. Get your own API key from [OpenWeatherMap](https://openweathermap.org/)
-2. Replace the `apiKey` variable in the JavaScript code with your own key
-
-## Accessibility Features
-
-- Proper ARIA attributes for screen reader support
-- Keyboard navigable interface
-- Sufficient color contrast
-- Text alternatives for icons
-- Focus management for modal dialogs
-
-## Future Improvements
-
-- 5-day weather forecast
-- Hourly weather predictions
-- Temperature unit toggle (Celsius/Fahrenheit)
-- Local storage for recent searches
-- More detailed weather maps
-- Air quality information
+Note: Geolocation feature requires HTTPS in most browsers except for localhost.
